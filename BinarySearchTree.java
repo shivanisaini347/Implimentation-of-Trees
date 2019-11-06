@@ -34,29 +34,7 @@ public class BinarySearchTree{
             inorderRec(root.right); 
         } 
     } 
-     void preorder()  { 
-            preorderRec(root); 
-         } 
-       void preorderRec(Node root) { 
-        if (root != null) { 
-            System.out.print(" "+root.data); 
-            preorderRec(root.left); 
-            preorderRec(root.right); 
-        }
-    } 
-    
-     void postorder()  { 
-            postorderRec(root); 
-         } 
-       void postorderRec(Node root) { 
-        if (root != null) { 
-            postorderRec(root.left); 
-            postorderRec(root.right); 
-            System.out.print(" "+root.data); 
-        } 
-      
-    } 
-     
+ 
      public static void main(String[] args) { 
         BinarySearchTree tree = new BinarySearchTree(); 
         tree.insert(50); 
