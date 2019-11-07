@@ -34,6 +34,16 @@ public class BinarySearchTree{
             inorderRec(root.right); 
         } 
     } 
+    void preorder()  { 
+            preorderRec(root); 
+         } 
+       void preorderRec(Node root) { 
+        if (root != null) { 
+            System.out.print(" "+root.data); 
+            preorderRec(root.left); 
+            preorderRec(root.right); 
+        }
+    } 
     void postorder()  { 
             postorderRec(root); 
          } 
